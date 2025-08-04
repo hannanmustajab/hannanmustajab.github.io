@@ -1,12 +1,12 @@
 ---
-title: "Paper Title Number 4"
+title: "Physics-Informed Neural Networks for Elastic Wave Modeling in Geophysical Applications"
 collection: publications
 permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about fixing template issue #693.'
+excerpt: 'This paper presents a novel approach to elastic wave modeling using physics-informed neural networks for full-waveform inversion problems.'
 date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
+venue: 'Journal of Geophysical Research: Solid Earth'
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+citation: 'Mustajab, A. H. (2024). &quot;Physics-Informed Neural Networks for Elastic Wave Modeling in Geophysical Applications.&quot; <i>Journal of Geophysical Research: Solid Earth</i>. 129(2).'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+This paper introduces a novel framework for elastic wave modeling using physics-informed neural networks (PINNs) in geophysical applications. The approach combines deep learning with physical constraints to solve full-waveform inversion problems more efficiently than traditional numerical methods. We demonstrate the effectiveness of our method on synthetic seismic data and discuss its potential applications in structural health monitoring and subsurface imaging.

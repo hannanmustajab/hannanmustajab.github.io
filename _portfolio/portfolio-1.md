@@ -1,7 +1,9 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Physics-Informed Neural Networks for Wave Propagation"
 collection: portfolio
+type: "Research Project"
+permalink: /portfolio/portfolio-1
+date: 2024-01-01
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+Development of physics-informed neural networks (PINNs) for solving elastic wave propagation problems. The project includes implementation of wave equation constraints, adaptive sampling strategies, and validation on synthetic and field datasets. Results show significant improvements in computational efficiency compared to traditional finite difference methods. 

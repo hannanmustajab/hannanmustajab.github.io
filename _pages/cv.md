@@ -11,35 +11,50 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Computational Geophysics, Christian-Albrechts-Universität zu Kiel, 2024 (expected)
+* M.S. in Artificial Intelligence, University of Genoa, 2022
+* B.S. in Mathematics, Aligarh Muslim University, 2020
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2022 - Present: PhD Researcher
+  * Institute for Geosciences, Christian-Albrechts-Universität zu Kiel
+  * Duties include: Developing physics-informed neural networks (PINNs) for elastic wave modeling and full-waveform inversion problems
+  * Supervisor: [To be filled]
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2022 - Present: IoT Developer
+  * Kumva IoT
+  * Duties include: Building remote monitoring systems for geophysical applications
+  * Focus: Edge sensing and IoT solutions for geophysical monitoring
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2020 - 2022: Research Assistant
+  * University of Genoa
+  * Duties included: Research in artificial intelligence and machine learning applications
+  * Supervisor: [To be filled]
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Programming Languages**: Python, MATLAB, C++, JavaScript
+* **Machine Learning & AI**: 
+  * Scientific Machine Learning
+  * Physics-Informed Neural Networks (PINNs)
+  * Deep Learning frameworks (PyTorch, TensorFlow)
+  * Operator Learning
+* **Geophysics & Numerical Methods**:
+  * Wave propagation modeling
+  * Full-waveform inversion
+  * Elastic wave modeling
+  * Numerical simulations
+* **Tools & Technologies**:
+  * Git & GitHub
+  * Jupyter Notebooks
+  * Docker
+  * IoT platforms and edge computing
+* **Domain Knowledge**:
+  * Remote sensing
+  * Structural health monitoring
+  * Subsurface applications
+  * Geophysical monitoring
 
 Publications
 ======
@@ -61,4 +76,6 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Open-source contributor on GitHub
+* Member of geophysical and machine learning research communities
+* Collaborator on interdisciplinary projects at the intersection of geophysics, ML, and IoT

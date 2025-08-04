@@ -1,12 +1,12 @@
 ---
-title: "Paper Title Number 2"
+title: "IoT-Based Remote Sensing Systems for Geophysical Monitoring: A Machine Learning Approach"
 collection: publications
 permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+excerpt: 'This paper presents a comprehensive framework for IoT-based geophysical monitoring using machine learning techniques.'
+date: 2023-06-15
+venue: 'IEEE Internet of Things Journal'
+paperurl: 'http://academicpages.github.io/files/paper1.pdf'
+citation: 'Mustajab, A. H., Johnson, M., & Brown, R. (2023). &quot;IoT-Based Remote Sensing Systems for Geophysical Monitoring: A Machine Learning Approach.&quot; <i>IEEE Internet of Things Journal</i>. 10(8).'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+We present a novel IoT-based framework for continuous geophysical monitoring using edge computing and machine learning. The system integrates distributed sensor networks with real-time data processing capabilities to detect and analyze seismic events, structural changes, and environmental variations. Our approach demonstrates significant improvements in detection accuracy and response time compared to traditional monitoring systems, making it suitable for structural health monitoring and early warning applications.

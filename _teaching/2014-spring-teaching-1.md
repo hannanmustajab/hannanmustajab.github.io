@@ -1,20 +1,11 @@
 ---
-title: "Teaching experience 1"
+title: "Computational Methods in Geophysics"
 collection: teaching
-type: "Undergraduate course"
+type: "Graduate Course"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+venue: "Kiel University"
+date: 2024-01-01
+location: "Kiel, Germany"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+Graduate-level course covering computational methods for solving geophysical problems. Topics include finite difference methods, spectral methods, optimization techniques, and introduction to machine learning approaches in geophysics. Students learn to implement numerical algorithms and apply them to real geophysical problems.
