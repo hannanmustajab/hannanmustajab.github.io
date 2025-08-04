@@ -1,5 +1,5 @@
 ---
-title: "Physics-Informed Neural Networks for Elastic Wave Modeling in Geophysical Applications"
+title: "Physics-Informed Neural Networks for Damage Localisation using Elastic Waves."
 collection: publications
 permalink: /publication/2024-02-17-paper-title-number-4
 excerpt: 'This paper presents a novel approach to elastic wave modeling using physics-informed neural networks for full-waveform inversion problems.'
