@@ -22,10 +22,14 @@ body .wrap{max-width:1060px}
 body .section{padding-top:72px;padding-bottom:72px}
 body .eyebrow{letter-spacing:.7px;color:var(--muted)}
 body .header nav{gap:20px}
+body .brand{display:flex;flex-direction:column;align-items:flex-start;gap:2px;line-height:1.2}
+body .brand-name{font:25px/1.1 var(--serif);font-weight:400;letter-spacing:-.2px}
+body .brand-sub{font:8px/1.7 monospace;letter-spacing:1.35px}
 body .nav-contact{border:0;padding:0}
 body .hero{gap:48px}
 body .research-intro{display:block;max-width:700px;margin:24px 0 36px}
 body .research-intro p{font-size:16px;line-height:1.85}
+body .research-intro .intro-lead{font:32px/1.2 var(--serif);color:var(--ink);margin-bottom:18px}
 body .ndt-figure{background:transparent;border:0;border-block:1px solid var(--line)}
 body .ndt-figure .figure-top{padding-inline:0}
 body .fwi-loop{background:transparent;padding:24px 0;border:0}
