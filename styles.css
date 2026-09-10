@@ -67,3 +67,36 @@ body .publication-row h3{font-size:22px}
 #education .education-date span{font-size:12px;font-weight:400;color:var(--muted)}
 body .contact{background:transparent;border:0;border-top:1px solid var(--line);padding:44px 0}
 @media(max-width:700px){body .wrap{width:calc(100% - 40px)}body .section{padding-block:48px}body .header nav{gap:14px 18px}body .hero{gap:28px}body .work-grid{gap:12px}#education .education-row{grid-template-columns:32px minmax(0,1fr);gap:5px 14px}#education .education-logo{width:32px;height:32px;grid-row:1 / span 2;align-self:start}#education .education-logo img{width:32px;height:32px}#education .education-date{grid-column:2;grid-row:2}#education .education-content h3{font-size:16px}body .research-intro p{font-size:15px}body .contact{padding-block:32px}}
+
+/* Portrait and personal journal */
+.profile-intro{display:grid;grid-template-columns:260px minmax(0,1fr);gap:58px;align-items:start;margin:24px 0 42px}
+.profile-intro .research-intro{margin:0}
+.profile-photo{margin:0}
+.profile-photo img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:52% center;filter:saturate(.82)}
+.profile-photo figcaption{display:block;padding:9px 0 0;font:8px/1.5 monospace;letter-spacing:.6px;color:var(--muted)}
+.intro-links{display:flex;gap:24px;flex-wrap:wrap;margin-top:24px}
+.life-page{background:#f4f3eb}
+.life-page .header{border-color:#d8d8ca}
+.life-page nav [aria-current="page"]{text-decoration:underline;text-underline-offset:6px}
+.life-hero{display:grid;grid-template-columns:.85fr 1.15fr;gap:74px;align-items:center;padding:78px 0 72px}
+.life-copy h1{margin:22px 0 24px;font-size:clamp(58px,7vw,92px)}
+.life-copy>p{max-width:450px;font-size:16px;line-height:1.9;margin-bottom:28px}
+.landscape-art{min-height:500px;position:relative;overflow:hidden;background:linear-gradient(180deg,#dfe7d4 0 44%,#bdc9a9 44% 58%,#7f9470 58%);border:1px solid #cad2bf}
+.landscape-art:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 0 45%,#f4f3eb33 45% 46%,transparent 46% 100%),repeating-linear-gradient(0deg,transparent 0 39px,#f6f5ed22 40px)}
+.landscape-sun{position:absolute;top:82px;right:92px;width:74px;height:74px;border-radius:50%;background:#d58a4c}
+.ridge{position:absolute;left:-8%;width:116%;height:180px;border-radius:50% 50% 0 0/70% 70% 0 0;transform-origin:center bottom}
+.ridge-one{bottom:132px;background:#aab996;transform:rotate(-4deg)}
+.ridge-two{bottom:54px;background:#7d9270;transform:rotate(5deg)}
+.ridge-three{bottom:-72px;background:#526c56;transform:rotate(-3deg)}
+.map-mark{position:absolute;top:24px;left:25px;font:8px/1.6 monospace;letter-spacing:1px;color:#52634e}
+.landscape-caption{position:absolute;right:22px;bottom:19px;font:8px monospace;letter-spacing:1px;color:#f4f3eb}
+.life-journal{border-top:1px solid #d8d8ca}
+.personal-grid{border-top:1px solid #d8d8ca}
+.personal-grid article{display:grid;grid-template-columns:90px 1fr;gap:35px;padding:32px 0;border-bottom:1px solid #d8d8ca;max-width:850px}
+.personal-number{font:italic 30px var(--serif);color:#7b876f}
+.personal-grid h3{font:32px/1.2 var(--serif);font-weight:400;margin:10px 0}
+.personal-grid p{font-size:14px;line-height:1.85;max-width:650px;margin:0}
+.life-invitation{border-top:1px solid #d8d8ca;padding:46px 0 56px;display:grid;grid-template-columns:150px 1fr auto;gap:34px;align-items:center}
+.life-invitation p{max-width:550px;font-size:14px;margin:0}
+@media(max-width:900px){.profile-intro{grid-template-columns:210px 1fr;gap:38px}.life-hero{gap:38px}.landscape-art{min-height:430px}}
+@media(max-width:700px){.profile-intro{grid-template-columns:96px 1fr;gap:22px}.profile-photo img{aspect-ratio:1/1}.profile-photo figcaption{display:none}.profile-intro .research-intro{grid-column:1/-1}.life-hero{grid-template-columns:1fr;padding:50px 0;gap:38px}.life-copy h1{font-size:62px}.landscape-art{min-height:360px}.personal-grid article{grid-template-columns:48px 1fr;gap:15px}.personal-grid h3{font-size:27px}.life-invitation{grid-template-columns:1fr;gap:17px}.life-invitation .button{justify-self:start}}

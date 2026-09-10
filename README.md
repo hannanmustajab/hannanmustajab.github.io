@@ -9,6 +9,7 @@ Run `python3 -m http.server 8000 --bind 127.0.0.1` in this directory, then open 
 ## Edit
 
 - `index.html`: biography, project cards, notebook previews, and contact links.
+- `beyond-work.html`: personal notes about travel and time outdoors.
 - `app.js`: the research-note dialog and illustrative wave animation.
 - `styles.css`: responsive layout, typography, and colors.
 
@@ -69,4 +70,6 @@ Logo assets are unmodified official images used to identify education institutio
 - assets/amu.png: https://www.amu.ac.in/assets/images/final-logo-2.png
 - assets/unige.png: https://id.unige.it/sites/id.unige.it/files/2022-02/logo_orizzontale_COLORE.png?itok=RVe_3yOE
 - assets/cau.svg: https://www.uni-kiel.de/ps/cgi-bin/logos/files/cau/norm-en/cau-norm-en-lilagrey-rgb.svg
+
+The professional portrait is sourced from the owner's official Kiel University profile and resized for the web: https://www.geotechnics.ifg.uni-kiel.de/en/team/abdul-hannan-mustajab-m-sc/hannan-1
 University logo-use guidance should be checked before public launch; Kiel and Genoa publish permission requirements. No institutional endorsement is claimed.
