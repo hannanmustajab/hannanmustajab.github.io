@@ -51,6 +51,15 @@ body .work-card:hover{transform:none}
 body .work-card h3{margin:18px 0 12px;font-size:28px}
 body .work-card p{font-size:13px}
 body .featured-paper,body .thesis-highlights{background:transparent;border:0;border-bottom:1px solid var(--line);padding:26px 0;margin:0}
+body .manuscript-highlights{border-bottom:1px solid var(--line);padding:32px 0;margin:0}
+body .manuscript-highlights h3{font:32px/1.24 var(--serif);font-weight:400;max-width:900px;margin:14px 0 8px}
+body .manuscript-highlights>p{font-size:13px;line-height:1.8;max-width:900px}
+body .manuscript-highlights .paper-authors{font-size:11px}
+body .manuscript-results{margin-top:26px}
+body .paper-figure-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
+body .paper-figure-grid figure{margin:0;border-top:1px solid var(--line);padding-top:12px}
+body .paper-figure-grid img{display:block;width:100%;height:auto;border:1px solid #e1e3dc;background:#fff}
+body .paper-figure-grid figcaption{display:block;padding:10px 0 0;font:11px/1.65 var(--sans);color:var(--muted)}
 body .featured-paper>h3,body .thesis-highlights>h3{font:28px/1.3 var(--serif)}
 body .research-details{margin-top:18px}
 body .research-details summary{cursor:pointer;font-size:13px;color:var(--green);padding:6px 0}
@@ -67,6 +76,7 @@ body .publication-row h3{font-size:22px}
 #education .education-date span{font-size:12px;font-weight:400;color:var(--muted)}
 body .contact{background:transparent;border:0;border-top:1px solid var(--line);padding:44px 0}
 @media(max-width:700px){body .wrap{width:calc(100% - 40px)}body .section{padding-block:48px}body .header nav{gap:14px 18px}body .hero{gap:28px}body .work-grid{gap:12px}#education .education-row{grid-template-columns:32px minmax(0,1fr);gap:5px 14px}#education .education-logo{width:32px;height:32px;grid-row:1 / span 2;align-self:start}#education .education-logo img{width:32px;height:32px}#education .education-date{grid-column:2;grid-row:2}#education .education-content h3{font-size:16px}body .research-intro p{font-size:15px}body .contact{padding-block:32px}}
+@media(max-width:700px){body .manuscript-highlights{padding:25px 0}body .manuscript-highlights h3{font-size:27px}body .paper-figure-grid{grid-template-columns:1fr;gap:20px}body .paper-figure-grid figcaption{font-size:10px}}
 
 /* Portrait and personal journal */
 .profile-intro{display:grid;grid-template-columns:260px minmax(0,1fr);gap:58px;align-items:start;margin:24px 0 42px}
