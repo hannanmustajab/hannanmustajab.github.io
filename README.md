@@ -19,7 +19,7 @@ To add news, add a new `<li>` at the top of the news list in `index.html`. To ad
 
 The design follows a mood board built from twelve STEM PhD websites: photo and one-line role first, research profile links, numbered research areas, a dated news list, and publication cards with a figure, venue badge and PDF/DOI/BibTeX links. Type is IBM Plex Sans and IBM Plex Mono. Colours: ink #14202B, link blue #1F5FBF, amber #A3561A for badges only.
 
-The Bodø programme in the Talks list still shows `[DATE]` until the date is confirmed.
+BIP dates (online March 27 and May 4, 2026; in Bodø April 13 to 17, 2026): https://www.ffst.unist.hr/_news/46009/Teaching%20and%20Learning%20in%20HE%20for%20PhD%20students.pdf
 
 ## Content provenance
 
@@ -29,7 +29,7 @@ Verified September 9, 2026:
 - Research interests, public personal contact, ORCID, and repositories: https://github.com/hannanmustajab
 - Power monitoring description: https://github.com/hannanmustajab/Power-Monitoring-System
 - Vaccine facility monitor: https://github.com/hannanmustajab/VaccineFacilityMonitor
-- Degree, Kumva IoT work in East Africa, Ubidots, SEA-EU funded BIP in Norway, and ECCOMAS attendance in Split in 2025: supplied by the owner. The BIP title and location, and ECCOMAS conference dates and topic, have since been checked against the owner’s LinkedIn posts. Exact BIP dates and case-study outcomes remain to be supplied.
+- Degree, Kumva IoT work in East Africa, Ubidots, SEA-EU funded BIP in Norway, and ECCOMAS attendance in Split in 2025: supplied by the owner. The BIP title and location, and ECCOMAS conference dates and topic, have since been checked against the owner’s LinkedIn posts. Case-study outcomes remain to be supplied.
 - LinkedIn was accessed through the browser, including the authenticated profile. The About section confirms StructMonitor work and the MSc AI specialization. The public certification section lists the KTH PINN summer school (July 2024). Only professional profile content was used; account analytics were not retained.
 - ECCOMAS MSF 2025, June 25–27, Split; PINNs/PirateNets presentation: https://www.linkedin.com/feed/update/urn:li:activity:7346126122931163136/
 - BIP title and Bodø location: https://www.linkedin.com/feed/update/urn:li:activity:7449894398756040704/
