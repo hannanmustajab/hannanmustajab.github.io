@@ -13,6 +13,8 @@ Run `python3 -m http.server 8000 --bind 127.0.0.1` in this directory, then open 
 - `styles.css`: colours, type and layout for both pages. Colours are defined once at the top.
 - `app.js`: shows the four latest news items with a "Show all news" button, and sets the footer year.
 
+`data/publications.json` holds the full publication list shown under "All publications". The GitHub Actions workflow `.github/workflows/update-publications.yml` runs every Monday (or by hand from the Actions tab), runs `scripts/update_publications.py`, and commits any new works it finds on Google Scholar, ORCID or OpenAlex. It only adds works, never removes them. To fix an entry, edit the JSON; to hide one, add `"hidden": true`. Google Scholar often blocks automated requests, so ORCID and OpenAlex act as backups: keeping the ORCID profile up to date makes this most reliable. Scheduled workflows only run on the repository's default branch.
+
 To add news, add a new `<li>` at the top of the news list in `index.html`. To add a paper, copy one `<article class="paper">` block.
 
 ## Design

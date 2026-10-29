@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Beyond Standard PINNs: Solving 2D Elastic Waves with PirateNet and the SOAP Optimizer",
+    "authors": "M. Hamzah, A. H. Mustajab, F. Wuttke, S. Mustajab, Z. H. Rizvi",
+    "year": 2026,
+    "venue": "Innovations and Advances in Cognitive Systems: ICIACS 2026, Volume 2, Springer",
+    "url": "https://link.springer.com/book/10.1007/978-3-032-32709-3?page=2",
+    "doi": "",
+    "source": "manual"
+  },
+  {
+    "title": "Physics-Informed Neural Network Based Wave Modelling for Structural Health Monitoring by Full Wave Form Inversion",
+    "authors": "A. H. Mustajab, F. Wuttke",
+    "year": 2025,
+    "venue": "Advanced Research Workshop, Thessaloniki",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&user=uDsLqqAAAAAJ&citation_for_view=uDsLqqAAAAAJ:UeHWp8X0CEIC",
+    "doi": "",
+    "source": "manual"
+  },
+  {
+    "title": "Physics-Informed Neural Networks for Damage Localization in Structures Using Elastic Waves",
+    "authors": "A. H. Mustajab, Z. H. Rizvi, F. Wuttke",
+    "year": 2025,
+    "venue": "ECCOMAS MSF 2025, Split",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&user=uDsLqqAAAAAJ&citation_for_view=uDsLqqAAAAAJ:2osOgNQ5qMEC",
+    "doi": "",
+    "source": "manual"
+  },
+  {
+    "title": "Physics-Informed Neural Networks for High-Frequency and Multi-Scale Problems Using Transfer Learning",
+    "authors": "A. H. Mustajab, H. Lyu, Z. Rizvi, F. Wuttke",
+    "year": 2024,
+    "venue": "Applied Sciences 14(8), 3204",
+    "url": "https://doi.org/10.3390/app14083204",
+    "doi": "10.3390/app14083204",
+    "source": "manual"
+  },
+  {
+    "title": "Study of Physics-Informed Neural Networks for Wave Dynamics",
+    "authors": "A. H. Mustajab",
+    "year": 2024,
+    "venue": "Master's thesis, University of Genoa",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&user=uDsLqqAAAAAJ&citation_for_view=uDsLqqAAAAAJ:9yKSN-GCB0IC",
+    "doi": "",
+    "aliases": ["Studio delle reti neurali informate dalla fisica per la dinamica delle onde"],
+    "source": "manual"
+  },
+  {
+    "title": "Automatic Passenger Counting on the Edge via Unsupervised Clustering",
+    "authors": "G. Delzanno, L. Caputo, D. D'Agostino, D. Grosso, A. H. Mustajab, L. Bixio, M. Rulli",
+    "year": 2023,
+    "venue": "Sensors 23(11), 5210",
+    "url": "https://doi.org/10.3390/s23115210",
+    "doi": "10.3390/s23115210",
+    "source": "manual"
+  }
+]
