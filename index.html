@@ -1,50 +1,260 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Abdul Hannan Mustajab — PhD researcher at Kiel University exploring scientific machine learning, wave dynamics and non-destructive testing. Research notes and IoT engineering.">
-<meta name="theme-color" content="#f7f7f2"><title>Hannan Mustajab — Scientific ML &amp; Wave Dynamics</title>
-<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hannan Mustajab | PhD researcher, Kiel University</title>
+<meta name="description" content="Abdul Hannan Mustajab, PhD researcher at Kiel University working on physics-informed neural networks and full waveform inversion for elastic waves in concrete.">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://hannanmustajab.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Hannan Mustajab: Scientific ML and Wave Dynamics">
+<meta property="og:description" content="PhD researcher at Kiel University working on physics-informed neural networks for elastic waves, structural health monitoring and non-destructive testing.">
+<meta property="og:url" content="https://hannanmustajab.github.io/">
+<meta property="og:image" content="https://hannanmustajab.github.io/assets/hannan-headshot.jpg">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Abdul Hannan Mustajab","url":"https://hannanmustajab.github.io/","image":"https://hannanmustajab.github.io/assets/hannan-headshot.jpg","jobTitle":"Doctoral Researcher","affiliation":{"@type":"CollegeOrUniversity","name":"Kiel University"},"sameAs":["https://scholar.google.com/citations?user=uDsLqqAAAAAJ","https://orcid.org/0009-0000-9337-7410","https://github.com/hannanmustajab","https://www.linkedin.com/in/mustajabhannan"]}</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="header wrap"><a class="brand" href="#" aria-label="Hannan Mustajab home"><span class="brand-name">Hannan Mustajab</span><span class="brand-sub">SCIENTIFIC ML · WAVE DYNAMICS</span></a><nav aria-label="Main navigation"><a href="#about">Research</a><a href="#work">Projects</a><a href="#publications">Publications</a><a href="#experience">Background</a><a href="beyond-work.html">Beyond work</a><a class="nav-contact" href="#contact">Let’s talk <span>↗</span></a></nav></header>
-<main id="main">
-<section class="hero wrap">
-<div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> DOCTORAL RESEARCHER · INSTITUTE OF GEOSCIENCES · KIEL</div><h1>Waves reveal.<br><em>Physics explains.</em></h1><p>I work on <strong>scientific machine learning and neural solvers for differential equations</strong>, with a focus on elastic waves and concrete non-destructive testing.</p><div class="actions"><a class="button primary" href="#about">Explore my research <span>↗</span></a><a class="text-link" href="#contact">Work with me <span>↗</span></a></div><div class="affiliation"><span class="uni-mark">CAU</span><span>Christian-Albrechts-Universität zu Kiel<br><span class="muted">Institute of Geosciences</span></span></div></div>
-<figure class="wave-card inspection-card"><div class="figure-top"><span>INSIDE CONCRETE / WAVE-BASED NDT</span><span class="live-label">ANIMATED SCHEMATIC</span></div><canvas id="wave" role="img" aria-label="Animated concrete cross-section. A source sends waves into concrete; receivers record direct and defect-scattered arrivals. Illustrative, not a numerical elastic-wave simulation."></canvas><div class="inspection-legend"><span><i class="legend-direct"></i>Incident wave</span><span><i class="legend-scattered"></i>Scattered wave</span><span>Concrete cross-section</span></div><div class="inspection-actions"><button id="defect-toggle" type="button" aria-pressed="true">Defect included</button><button id="motion" type="button" aria-pressed="false">Pause motion Ⅱ</button></div><p id="inspection-status" aria-live="polite">A defect scatters the wave, adding a later arrival at the receiver.</p><figcaption>Measure waves → compare with physics → investigate changes.</figcaption><p class="inspection-caveat">Conceptual animation, not a PDE simulation or an FWI reconstruction.</p></figure>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="index.html">Hannan Mustajab</a>
+    <div class="nav-links">
+      <a href="#research">Research</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#talks">Talks</a>
+      <a href="#projects">Projects</a>
+      <a href="beyond-work.html">Beyond work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main" class="wrap">
+
+  <section class="intro" aria-label="Introduction">
+    <img class="portrait" src="assets/hannan-headshot.jpg" width="1400" height="933" alt="Portrait of Hannan Mustajab">
+    <div class="intro-text">
+      <div>
+        <h1>Abdul Hannan Mustajab</h1>
+        <p class="role">PhD researcher, Institute of Geosciences, Kiel University</p>
+        <p class="advisor">Advised by Prof. Dr.-Ing. Frank Wuttke, <a href="https://www.geotechnics.ifg.uni-kiel.de/en/projects">StructMonitor project</a></p>
+      </div>
+      <p class="bio">I work on scientific machine learning and neural solvers for differential equations, with a focus on elastic waves in concrete. The aim is to use measured waves to find hidden damage in structures, using physics-informed neural networks and full waveform inversion.</p>
+      <p class="bio">Before Kiel, I completed an MSc in Computer Science at the University of Genoa, with a thesis on physics-informed neural networks for wave dynamics supervised by Prof. Frank Wuttke and Prof. Lorenzo Rosasco.</p>
+      <ul class="profiles" aria-label="Research profiles">
+        <li><a href="https://scholar.google.com/citations?user=uDsLqqAAAAAJ&amp;hl=en">Google Scholar</a></li>
+        <li><a href="https://orcid.org/0009-0000-9337-7410">ORCID</a></li>
+        <li><a href="https://github.com/hannanmustajab">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/mustajabhannan">LinkedIn</a></li>
+        <li><a class="primary" href="mailto:abdul-hannan.mustajab@ifg.uni-kiel.de">Email</a></li>
+      </ul>
+      <p class="muted small">Open to research collaborations on wave-based inverse problems and neural solvers.</p>
+    </div>
+  </section>
+
+  <section id="research" class="section">
+    <h2>Research</h2>
+    <ol class="areas">
+      <li>
+        <span class="num">01</span>
+        <strong>Neural solvers for elastic waves in complex media</strong>
+        <span>Comparing standard, Fourier-feature and PirateNet PINNs on layered and Marmousi2 models.</span>
+      </li>
+      <li>
+        <span class="num">02</span>
+        <strong>Seeing inside concrete with full waveform inversion</strong>
+        <span>Send a pulse, compare recorded and predicted waves, and update the model of the structure until they match.</span>
+      </li>
+      <li>
+        <span class="num">03</span>
+        <strong>Making PINNs faster to train</strong>
+        <span>Transfer learning from easier, lower-frequency problems to high-frequency and multi-scale ones.</span>
+      </li>
+    </ol>
+  </section>
+
+  <section id="news" class="section">
+    <h2>News</h2>
+    <ul class="dated-list" id="news-list">
+      <li><span class="date">OCT 2026</span><span>Submitted a manuscript on adaptive PINNs for elastic waves in heterogeneous media.</span></li>
+      <li><span class="date">2026</span><span>Book chapter on 2D elastic waves with PirateNet and the SOAP optimizer published by Springer (ICIACS 2026).</span></li>
+      <li><span class="date">APR 2026</span><span>Joined the SEA-EU programme on teaching in higher education for PhD students at Nord University, Bodø.</span></li>
+      <li><span class="date">DEC 2025</span><span>Presented PINNs and full waveform inversion for concrete at a NATO SPS workshop in Thessaloniki.</span></li>
+      <li><span class="date">JUN 2025</span><span>Talk at ECCOMAS MSF 2025 in Split on PirateNets for elastic waves.</span></li>
+      <li><span class="date">JUL 2024</span><span>Attended the PINNs summer school at KTH Royal Institute of Technology.</span></li>
+      <li><span class="date">APR 2024</span><span>Started my PhD at Kiel University. Transfer-learning PINN paper published in <em>Applied Sciences</em>.</span></li>
+    </ul>
+    <button type="button" class="outline-button" id="news-toggle" aria-controls="news-list" aria-expanded="false" hidden>Show all news</button>
+  </section>
+
+  <section id="publications" class="section">
+    <div class="section-head">
+      <h2>Selected publications</h2>
+      <a href="https://scholar.google.com/citations?user=uDsLqqAAAAAJ&amp;hl=en">All on Google Scholar</a>
+    </div>
+
+    <article class="paper">
+      <img class="thumb" src="assets/marmousi-wavefields.png" width="1100" height="760" loading="lazy" alt="Elastic wavefields on the Marmousi2 model comparing three PINN types with a numerical reference">
+      <div class="paper-body">
+        <div class="badges"><span class="badge solid">SUBMITTED 2026</span><span class="badge">MANUSCRIPT</span></div>
+        <h3>Adaptive Physics-Informed Neural Networks for Elastic Wave Propagation in Heterogeneous Media</h3>
+        <p class="authors"><strong>A. H. Mustajab</strong>, F. Wuttke, A. Riaz Khan, Z. H. Rizvi</p>
+        <p>PirateNet reaches 1.67% error on the filtered Marmousi2 model, against about 20% for a standard PINN.</p>
+        <details class="more">
+          <summary>Key results</summary>
+          <ul>
+            <li>Filtered Marmousi2: 1.67% time-averaged relative L2 error for PirateNet 3 &times; 128, compared with 20.71% for the standard PINN and 18.25% for the Fourier-feature PINN.</li>
+            <li>Six-layer medium: 0.40% for PirateNet 2 &times; 128 at a similar parameter count, compared with 4.12% and 5.50%.</li>
+            <li>Error at the final time on Marmousi2: 3.0%, compared with 45% and 35%.</li>
+          </ul>
+          <img src="assets/marmousi-results.png" width="1100" height="720" loading="lazy" alt="Filtered Marmousi2 P-wave speed and relative error plots. PirateNet has lower training and time-dependent error than the other two PINNs.">
+          <p class="muted small">One run per configuration in two-dimensional, constant-density media with smoothed or low-pass-filtered material models. These are numerical benchmarks, not field measurements on concrete. This is a submitted manuscript, not yet peer reviewed.</p>
+        </details>
+        <div class="links"><a href="https://doi.org/10.21203/rs.3.rs-8006794/v1">Earlier preprint</a></div>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="thumb thumb-drawn" aria-hidden="true">
+        <svg width="200" height="80" viewBox="0 0 200 80" fill="none" stroke-width="2"><path d="M0 40 C10 40 14 12 22 12 S34 68 42 68 S54 20 62 20 S74 56 82 56 S94 32 102 32 S114 46 122 46 S134 38 142 38 S170 40 200 40" stroke="#1F5FBF"/><path d="M0 40 C6 40 9 22 14 22 S22 58 27 58 S35 26 40 26 S48 52 53 52 S61 34 66 34 S80 42 90 42 S150 40 200 40" stroke="#A3561A" stroke-dasharray="4 4"/></svg>
+      </div>
+      <div class="paper-body">
+        <div class="badges"><span class="badge solid">APPLIED SCIENCES 2024</span><span class="badge">JOURNAL</span></div>
+        <h3>Physics-Informed Neural Networks for High-Frequency and Multi-Scale Problems Using Transfer Learning</h3>
+        <p class="authors"><strong>A. H. Mustajab</strong>, H. Lyu, Z. Rizvi, F. Wuttke &middot; <em>Applied Sciences</em> 14(8), 3204</p>
+        <p>Train on an easier problem first, then fine-tune: 0.037% error against 0.80% when training from scratch.</p>
+        <details class="more">
+          <summary>Key results</summary>
+          <ul>
+            <li>Damped oscillator at &omega; = 40: 0.037% relative L2 error with transfer learning, compared with 0.80% for Adam from scratch (Table 1).</li>
+            <li>1D wave equation at c = 1.5: a loss of order 10<sup>-5</sup> in 600 epochs with transfer learning, compared with 1,000 epochs without (Figure 9g).</li>
+            <li>1D wave equation at c = 1: 0.05% relative L2 error against the analytical solution (Section 3.2).</li>
+          </ul>
+          <p class="muted small">Numerical benchmark results, not concrete damage-detection accuracy. Epoch counts do not measure end-to-end runtime.</p>
+        </details>
+        <div class="links">
+          <a href="https://mdpi-res.com/d_attachment/applsci/applsci-14-03204/article_deploy/applsci-14-03204.pdf?version=1712808195">PDF</a>
+          <a href="https://doi.org/10.3390/app14083204">DOI</a>
+          <details class="bib">
+            <summary>BibTeX</summary>
+<pre>@article{mustajab2024pinns,
+  title   = {Physics-Informed Neural Networks for High-Frequency
+             and Multi-Scale Problems Using Transfer Learning},
+  author  = {Mustajab, A. H. and Lyu, H. and Rizvi, Z. and Wuttke, F.},
+  journal = {Applied Sciences}, volume = {14}, number = {8},
+  pages   = {3204}, year = {2024}, doi = {10.3390/app14083204}
+}</pre>
+          </details>
+        </div>
+      </div>
+    </article>
+
+    <article class="paper">
+      <img class="thumb" src="assets/marmousi-results.png" width="1100" height="720" loading="lazy" alt="Filtered Marmousi2 P-wave speed and error plots for three PINN types">
+      <div class="paper-body">
+        <div class="badges"><span class="badge solid">SPRINGER 2026</span><span class="badge">BOOK CHAPTER</span></div>
+        <h3>Beyond Standard PINNs: Solving 2D Elastic Waves with PirateNet and the SOAP Optimizer</h3>
+        <p class="authors">M. Hamzah, <strong>A. H. Mustajab</strong>, F. Wuttke, S. Mustajab, Z. H. Rizvi</p>
+        <p><em>Innovations and Advances in Cognitive Systems: ICIACS 2026</em>, Volume 2, pages 283 to 299.</p>
+        <div class="links"><a href="https://link.springer.com/book/10.1007/978-3-032-32709-3?page=2">Springer</a></div>
+      </div>
+    </article>
+
+    <h3 class="subhead">Other work</h3>
+    <ul class="dated-list">
+      <li><span class="date">2025</span><span><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=uDsLqqAAAAAJ&amp;citation_for_view=uDsLqqAAAAAJ:UeHWp8X0CEIC">Physics-Informed Neural Network Based Wave Modelling for Structural Health Monitoring by Full Wave Form Inversion</a><br><span class="muted small"><strong>A. H. Mustajab</strong>, F. Wuttke. Advanced Research Workshop, Thessaloniki.</span></span></li>
+      <li><span class="date">2025</span><span><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=uDsLqqAAAAAJ&amp;citation_for_view=uDsLqqAAAAAJ:2osOgNQ5qMEC">Physics-Informed Neural Networks for Damage Localization in Structures Using Elastic Waves</a><br><span class="muted small"><strong>A. H. Mustajab</strong>, Z. H. Rizvi, F. Wuttke. ECCOMAS MSF 2025, Split.</span></span></li>
+      <li><span class="date">2024</span><span><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=uDsLqqAAAAAJ&amp;citation_for_view=uDsLqqAAAAAJ:9yKSN-GCB0IC">Study of Physics-Informed Neural Networks for Wave Dynamics</a><br><span class="muted small"><strong>A. H. Mustajab</strong>. Master's thesis, University of Genoa.</span></span></li>
+      <li><span class="date">2023</span><span><a href="https://doi.org/10.3390/s23115210">Automatic Passenger Counting on the Edge via Unsupervised Clustering</a><br><span class="muted small">G. Delzanno, L. Caputo, D. D'Agostino, D. Grosso, <strong>A. H. Mustajab</strong>, L. Bixio, M. Rulli. <em>Sensors</em> 23(11), 5210.</span></span></li>
+    </ul>
+  </section>
+
+  <section id="talks" class="section">
+    <h2>Talks and programmes</h2>
+    <ul class="dated-list">
+      <li><span class="date">APR 2026</span><span><strong>Teaching and Learning in Higher Education for PhD Students.</strong> SEA-EU Blended Intensive Programme, Bodø, Norway, April 13 to 17, 2026. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7449894398756040704/">Notes</a></span></li>
+      <li><span class="date">DEC 2025</span><span><strong>PINN-based wave modelling for structural health monitoring by full waveform inversion.</strong> NATO SPS Advanced Research Workshop, Thessaloniki. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7412158765333950466/">Notes</a></span></li>
+      <li><span class="date">JUN 2025</span><span><strong>PINNs for damage localization in structures using elastic waves.</strong> ECCOMAS MSF 2025, Split. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7346126122931163136/">Notes</a></span></li>
+      <li><span class="date">JUL 2024</span><span><strong>Physics-Informed Neural Networks summer school.</strong> KTH Royal Institute of Technology, Stockholm.</span></li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-head">
+      <h2>Projects and notes</h2>
+      <a href="https://github.com/hannanmustajab">More on GitHub</a>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <span class="label">RESEARCH NOTE, DRAFT</span>
+        <h3>Making PINNs faster: where to start</h3>
+        <p>An outline on training cost, sampling and transfer learning. Code and results will follow.</p>
+        <details class="more">
+          <summary>Read the outline</summary>
+          <ol>
+            <li>Define the PDE, domain, boundary conditions, precision and hardware.</li>
+            <li>Profile the baseline: separate sampling, automatic differentiation and optimizer time.</li>
+            <li>Compare one change at a time, including transfer learning and sampling strategies.</li>
+            <li>Report wall-clock time alongside solution error, multiple seeds and a reproducible configuration.</li>
+          </ol>
+          <p class="muted small">Planned post. This outline is not a published result.</p>
+        </details>
+      </article>
+      <a class="card" href="https://github.com/hannanmustajab/Power-Monitoring-System">
+        <span class="label">IOT ENGINEERING</span>
+        <h3>Connected power monitoring</h3>
+        <p>Non-invasive current sensing on Particle Argon and Boron with buffered cloud uploads.</p>
+      </a>
+      <a class="card" href="https://github.com/hannanmustajab/VaccineFacilityMonitor">
+        <span class="label">IOT ENGINEERING</span>
+        <h3>Vaccine facility monitoring</h3>
+        <p>A Particle Boron device that watches conditions in vaccine storage.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="experience-title">
+    <h2 id="experience-title">Experience and education</h2>
+    <div class="columns">
+      <div><span class="date">2024 TO NOW</span><strong>PhD, Machine Learning for Geosciences</strong><span class="muted">Kiel University, Germany</span></div>
+      <div><span class="date">2021 TO 2024</span><strong>MSc Computer Science, AI</strong><span class="muted">University of Genoa, Italy</span></div>
+      <div><span class="date">2018 TO 2021</span><strong>BSc (Honours) Mathematics</strong><span class="muted">Aligarh Muslim University, India</span></div>
+      <div><span class="date">IOT DEVELOPMENT</span><strong>Kumva IoT</strong><span class="muted">Remote monitoring with Particle devices and Ubidots for projects in East Africa</span></div>
+    </div>
+  </section>
+</main>
+
+<section id="contact" class="contact">
+  <div class="wrap contact-inner">
+    <div>
+      <h2>Working on wave-based inverse problems or neural solvers?</h2>
+      <p>I am happy to talk about research collaborations, and about IoT projects that need sensors connected to the cloud.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="button-solid" href="mailto:abdul-hannan.mustajab@ifg.uni-kiel.de?subject=Research%20collaboration">Research collaboration</a>
+      <a class="button-ghost" href="mailto:hannanmustajab@icloud.com?subject=IoT%20project">IoT and freelance work</a>
+    </div>
+  </div>
 </section>
-<section class="section wrap research-about" id="about">
-<div class="section-heading"><div><div class="eyebrow">ABOUT ME &amp; CURRENT RESEARCH</div><h2>Listening to concrete<span>.</span></h2><p class="research-subtitle">Scientific machine learning for structural health monitoring.</p></div></div>
-<div class="profile-intro"><figure class="profile-photo"><img src="assets/hannan-headshot.jpg" width="1400" height="933" alt="Professional portrait of Hannan Mustajab" loading="lazy"><figcaption>Official portrait · Kiel University</figcaption></figure><div class="research-intro"><p class="intro-lead">Hey, I’m Hannan.</p><p>I work at the Institute of Geosciences at Kiel University, where I am pursuing my PhD under the supervision of <strong>Prof. Dr.-Ing. Frank Wuttke</strong>.</p><p>Before this, I completed an MSc in Computer Science at the University of Genoa. My master’s thesis on physics-informed neural networks for wave dynamics was supervised by <strong>Prof. Frank Wuttke</strong> and <strong>Prof. Lorenzo Rosasco</strong>.</p><p>I am interested in scientific machine learning and neural solvers for differential equations, particularly wave problems with applications in structural health monitoring and non-destructive testing.</p><div class="intro-links"><a class="text-link" href="https://www.geotechnics.ifg.uni-kiel.de/en/projects">About StructMonitor ↗</a><a class="text-link" href="beyond-work.html">Beyond work ↗</a></div></div></div>
-<figure class="ndt-figure"><div class="figure-top"><span>RESEARCH EXPLAINED / SEND WAVES → LISTEN → LOOK INSIDE</span><span>HOW IT WORKS</span></div>
-<div class="fwi-loop" aria-label="Repeat the comparison to improve the picture inside the concrete"><div class="fwi-node"><span>01</span><strong>Send a pulse</strong><small>Waves enter the concrete</small></div><span class="fwi-arrow" aria-hidden="true">→</span><div class="fwi-node"><span>02</span><strong>Predict the waves</strong><small>Use a virtual structure</small></div><span class="fwi-arrow" aria-hidden="true">→</span><div class="fwi-node"><span>03</span><strong>Listen and compare</strong><small>Check the real recording</small></div><span class="fwi-arrow" aria-hidden="true">→</span><div class="fwi-node"><span>04</span><strong>Improve the picture</strong><small>Adjust the virtual structure</small></div><span class="fwi-arrow fwi-return" aria-hidden="true">↺</span><div class="fwi-note"><strong>Then try again ↺</strong><span>Predict, compare and adjust: each round aims to make the virtual structure better explain what the sensors hear.</span></div></div><div class="waveform-compare"><div><span class="mono">WHAT THE SENSORS HEAR</span><svg viewBox="0 0 310 62" role="img" aria-label="Observed receiver waveform"><path d="M2 33h40l10-2 7-20 8 42 9-36 9 22 12-5 12 1 10-7 12 8 12-4 11 2 14-5 17 5 15-3 16 1 16-2 17 2 17-1 26 1" fill="none" stroke="#ad744d" stroke-width="2"/></svg></div><div><span class="mono">WHAT THE COMPUTER PREDICTS</span><svg viewBox="0 0 310 62" role="img" aria-label="Modelled receiver waveform"><path d="M2 33h40l10-1 7-16 8 35 9-31 9 20 12-3 12 1 10-6 12 6 12-2 11 1 14-4 17 4 15-2 16 1 16-1 17 1 17-1 26 1" fill="none" stroke="#557b50" stroke-width="2"/></svg></div><div class="misfit-label"><span>DO THEY MATCH?</span><strong>Compare the wave shapes</strong><small>Differences help guide the next adjustment.</small></div></div><div class="inversion-loop"><span aria-hidden="true">↺</span><div><strong>Learning about the inside from waves on the outside.</strong> Full waveform inversion (FWI) adjusts the virtual structure to better explain the recordings. Wavefield reconstruction inversion (WRI) also gives the predicted waves room to adjust along the way. Both use repeated comparisons to work towards a better picture.</div></div><figcaption>Illustration of the idea. A highlighted area is a clue for further inspection, not a confirmed crack.</figcaption></figure>
-</section>
-<section class="section wrap" id="notebook"><div class="section-heading"><div><div class="eyebrow">THINKING IN PUBLIC</div><h2>The research notebook<span>.</span></h2><p>Small experiments, useful ideas, and things learned along the way.</p></div></div>
-<div class="notes-grid">
-<article class="note" data-topic="pinns"><div class="note-meta"><span>PINNs</span><span>DRAFT IDEA</span></div><h3><button class="note-open" data-note="pinns">Making PINNs faster: where to start <span>↗</span></button></h3><p>A working outline for exploring training cost, sampling, and transfer learning.</p><div class="note-footer">Research note <span>Outline · no benchmark yet</span></div></article>
-</div><p class="draft-note">This note is a draft. Results and code will accompany the published post.</p>
-</section>
-<section class="work-section" id="work"><div class="wrap section"><div class="section-heading"><div><div class="eyebrow">FROM EQUATIONS TO THE FIELD</div><h2>Selected work<span>.</span></h2><p>Research with physical meaning. Engineering with practical purpose.</p></div><a class="text-link" href="https://github.com/hannanmustajab">More on GitHub ↗</a></div><div class="work-grid"><a class="work-card research-card" href="https://doi.org/10.3390/app14083204"><span class="project-type">RESEARCH / PUBLICATION · 2024</span><h3>PINNs for high-frequency<br>and multi-scale problems</h3><p>Exploring transfer learning for physics-informed neural networks.</p><div class="work-bottom"><span>Scientific ML · Wave modelling</span><span>Read paper ↗</span></div></a><a class="work-card" href="https://github.com/hannanmustajab/Power-Monitoring-System"><span class="project-type">ENGINEERING / IoT</span><h3>Connected power<br>monitoring</h3><p>Non-invasive current sensing with Particle Argon and Boron, dynamic sampling, and buffered cloud uploads.</p><div class="work-bottom"><span>Particle · C++ · Sensors</span><span>View project ↗</span></div></a><a class="work-card" href="https://github.com/hannanmustajab/VaccineFacilityMonitor"><span class="project-type">ENGINEERING / IoT</span><h3>Vaccine facility<br>monitoring</h3><p>A Particle Boron device for monitoring vaccine storage facilities.</p><div class="work-bottom"><span>Particle Boron · Remote monitoring</span><span>View project ↗</span></div></a></div></div></section>
-<section class="section wrap publications" id="publications"><div class="section-heading"><div><div class="eyebrow">PAPERS / METHODS &amp; RESULTS</div><h2>Research in print<span>.</span></h2><p>Published work, preprints, and conference contributions.</p></div><a class="text-link" href="https://scholar.google.com/citations?user=uDsLqqAAAAAJ&amp;hl=en">Google Scholar ↗</a></div>
-<article class="featured-paper"><span class="eyebrow">FEATURED PAPER · APPLIED SCIENCES · 2024</span><h3><a href="https://doi.org/10.3390/app14083204">Physics-Informed Neural Networks for High-Frequency and Multi-Scale Problems Using Transfer Learning ↗</a></h3><p class="paper-authors">A. H. Mustajab, H. Lyu, Z. Rizvi &amp; F. Wuttke · 14(8), 3204</p><p>Train on a lower-frequency problem, then fine-tune toward harder cases. We studied this strategy on a damped harmonic oscillator and a one-dimensional wave equation.</p>
-<details class="research-details"><summary>Key results and context</summary><div class="result-grid"><div><span class="result-number">0.037%</span><h4>Relative L₂ error</h4><p>Transfer learning in the oscillator benchmark at ω = 40, compared with 0.80% for Adam training from scratch (Table 1).</p></div><div><span class="result-number">600 vs 1,000</span><h4>Training epochs</h4><p>For the 1D wave case at c = 1.5, transfer learning reached a loss of order 10⁻⁵ in 600 epochs, versus 1,000 without transfer (Figure 9g).</p></div><div><span class="result-number">0.05%</span><h4>Baseline relative L₂ error</h4><p>The 1D wave solution at c = 1 was compared with the analytical solution (Section 3.2).</p></div></div><p class="result-context">These are reported numerical benchmark results, not concrete damage-detection accuracy or universal speedups. Epoch counts do not measure end-to-end runtime or include source-model training. <a href="https://doi.org/10.3390/app14083204">Read methods and results ↗</a></p></details></article>
-<article class="manuscript-highlights"><div class="eyebrow">SUBMITTED MANUSCRIPT · OCTOBER 2026</div><h3>Adaptive Physics-Informed Neural Networks for Elastic Wave Propagation in Heterogeneous Media</h3><p class="paper-authors">A. H. Mustajab, F. Wuttke, A. Riaz Khan &amp; Z. H. Rizvi</p><p>We compare Vanilla, Fourier-feature, and PirateNet PINNs for two-dimensional elastic waves in homogeneous, layered, and filtered Marmousi2 media against finite-difference references.</p><div class="result-grid manuscript-results"><div><span class="result-number">1.67%</span><h4>Filtered Marmousi2</h4><p>PirateNet 3 × 128 time-averaged relative L₂ error, compared with 20.71% for the Vanilla PINN and 18.25% for the Fourier-feature PINN.</p></div><div><span class="result-number">0.40%</span><h4>Six-layer medium</h4><p>PirateNet 2 × 128 at a similar parameter count, compared with 4.12% and 5.50% for the two nine-layer MLP-based PINNs.</p></div><div><span class="result-number">3.0%</span><h4>Error at final time</h4><p>On the filtered Marmousi2 crop at t = 1, compared with 45% for Vanilla and 35% for Fourier-feature PINNs.</p></div></div><div class="paper-figure-grid"><figure><img src="assets/marmousi-results.png" width="1100" height="720" loading="lazy" alt="Filtered Marmousi2 P-wave speed and relative error plots. PirateNet has lower training and time-dependent error than Vanilla and Fourier-feature PINNs."><figcaption>Filtered Marmousi2 benchmark: material, training history, and error over simulated time.</figcaption></figure><figure><img src="assets/marmousi-wavefields.png" width="1100" height="760" loading="lazy" alt="Marmousi2 elastic wavefields at time 0.9 comparing Vanilla, Fourier-feature, and PirateNet predictions with numerical references and differences."><figcaption>Wavefield comparison at t = 0.9. The PirateNet difference panels are smaller in this benchmark.</figcaption></figure></div><p class="result-context">Results are from one submitted-manuscript run per configuration in two-dimensional, constant-density media with smoothed or low-pass-filtered material models. They are numerical benchmarks, not concrete field measurements or validated damage-localization accuracy. <a href="https://doi.org/10.21203/rs.3.rs-8006794/v1">Earlier preprint version ↗</a></p></article>
-<article class="thesis-highlights"><div class="eyebrow">THESIS HIGHLIGHTS · UNIVERSITY OF GENOA · 2024</div><h3>Study of Physics-Informed Neural Networks for Wave Dynamics</h3><p class="paper-authors">Master’s thesis · research carried out at Kiel University</p><p>The thesis moved from a damped oscillator to one- and two-dimensional acoustic wave equations, comparing PINN wavefields with finite-difference reference solutions in homogeneous and layered velocity models.</p><details class="research-details"><summary>Thesis highlights</summary><div class="thesis-grid"><div><span class="result-number">4.50%</span><h4>Best homogeneous case</h4><p>Hard initial-condition enforcement without explicit boundary points, using Adam with an inverse-time learning-rate schedule.</p></div><div><span class="result-number">17.7%</span><h4>Layered velocity model</h4><p>Best reported L₂ relative error after increasing network width, collocation points, initial-condition points, and smoothing the velocity transition.</p></div><div><span class="result-number">~10 h</span><h4>2D training run</h4><p>The presentation reports roughly ten hours on one NVIDIA RTX 4090 for a layered 2+1D wave model, while finite-difference modelling took about one minute on one CPU.</p></div></div><p class="result-context">The thesis also found that boundary treatment and source placement matter: soft boundary terms improved a near-boundary source case, while competing loss terms could worsen a centred-source case. These are thesis-specific numerical experiments, not field measurements on concrete.</p></details></article>
-<div class="publication-list">
-<article class="publication-row"><span class="mono">2026 · BOOK CHAPTER</span><div><h3><a href="https://link.springer.com/book/10.1007/978-3-032-32709-3?page=2">Beyond Standard PINNs: Solving 2D Elastic Waves with PirateNet and the SOAP Optimizer ↗</a></h3><p>M. Hamzah, A. H. Mustajab, F. Wuttke, S. Mustajab &amp; Z. H. Rizvi</p><p><em>Innovations and Advances in Cognitive Systems: ICIACS 2026, Volume 2</em>, pp. 283–299 · Springer.</p></div></article>
-<article class="publication-row"><span class="mono">2025 · WORKSHOP TALK</span><div><h3><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=uDsLqqAAAAAJ&amp;citation_for_view=uDsLqqAAAAAJ:UeHWp8X0CEIC">Physics-Informed Neural Network Based Wave Modelling for Structural Health Monitoring by Full Wave Form Inversion ↗</a></h3><p>A. H. Mustajab &amp; F. Wuttke · Advanced Research Workshop, Thessaloniki, December 15–18, 2025.</p></div></article>
-<article class="publication-row"><span class="mono">2025 · CONFERENCE TALK</span><div><h3><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=uDsLqqAAAAAJ&amp;citation_for_view=uDsLqqAAAAAJ:2osOgNQ5qMEC">Physics-Informed Neural Networks for Damage Localization in Structures Using Elastic Waves ↗</a></h3><p>A. H. Mustajab, Z. H. Rizvi &amp; F. Wuttke · ECCOMAS MSF 2025, Split.</p></div></article>
-<article class="publication-row"><span class="mono">2024 · MASTER’S THESIS</span><div><h3><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=uDsLqqAAAAAJ&amp;citation_for_view=uDsLqqAAAAAJ:9yKSN-GCB0IC">Study of Physics-Informed Neural Networks for Wave Dynamics ↗</a></h3><p>A. H. Mustajab · University of Genoa. Listed in Scholar as <em>Studio delle reti neurali informate dalla fisica per la dinamica delle onde.</em></p></div></article>
-<article class="publication-row"><span class="mono">2023 · JOURNAL ARTICLE</span><div><h3><a href="https://doi.org/10.3390/s23115210">Automatic Passenger Counting on the Edge via Unsupervised Clustering ↗</a></h3><p>G. Delzanno, L. Caputo, D. D’Agostino, D. Grosso, A. H. Mustajab, L. Bixio &amp; M. Rulli · <em>Sensors</em> 23(11), 5210.</p><p>A low-cost Wi-Fi scanner and an edge-processing pipeline for estimating passenger counts, addressing MAC-address randomization through clustering.</p></div></article>
-</div></section>
-<section class="section wrap cv-section" id="experience"><div class="eyebrow">PROFESSIONAL BACKGROUND</div><h2>Work experience<span>.</span></h2><div class="cv-row"><div><span class="mono">RESEARCH · KIEL, GERMANY</span><h3>Doctoral Researcher</h3><span>Kiel University · Geomechanics and Geotechnics</span></div><div><p>Scientific machine learning for elastic wave modelling, structural health monitoring, and non-destructive testing within StructMonitor.</p><p>Investigating physics-informed neural networks for forward wave problems and their use in full waveform inversion of concrete.</p></div></div><div class="cv-row"><div><span class="mono">ENGINEERING · EAST AFRICA PROJECTS</span><h3>IoT Development</h3><span>Kumva IoT</span></div><div><p>Built remote monitoring systems using Particle IoT devices and Ubidots, connecting sensor measurements to cloud dashboards.</p><p>Experience spans industrial monitoring, energy analytics, and real-time sensor networks.</p><a class="text-link" href="#work">Explore selected IoT projects ↗</a></div></div></section>
-<section class="section wrap cv-section" id="education"><div class="eyebrow">ACADEMIC BACKGROUND</div><h2>Education<span>.</span></h2>
-<div class="education-row"><div class="education-date"><span>Apr 2024 — Present</span></div><a class="education-logo" href="https://www.uni-kiel.de/en/"><img src="assets/cau.svg" width="40" height="40" alt="Kiel University logo" loading="lazy"></a><div class="education-content"><h3>PhD · Machine Learning for Geosciences</h3><p>Christian-Albrechts-Universität zu Kiel · Kiel, Germany</p></div></div>
-<div class="education-row"><div class="education-date"><span>2021 — Mar 2024</span></div><a class="education-logo" href="https://unige.it/en"><img src="assets/unige.png" width="40" height="40" alt="University of Genoa logo" loading="lazy"></a><div class="education-content"><h3>MSc · Computer Science</h3><p>University of Genoa · Artificial Intelligence specialization</p></div></div>
-<div class="education-row"><div class="education-date"><span>2018 — 2021</span></div><a class="education-logo" href="https://www.amu.ac.in/"><img src="assets/amu.png" width="40" height="40" alt="Aligarh Muslim University logo" loading="lazy"></a><div class="education-content"><h3>BSc (Honours) · Mathematics</h3><p>Aligarh Muslim University · Aligarh, India</p></div></div></section>
-<section class="section wrap events-section" id="events"><div class="eyebrow">SCIENTIFIC EXCHANGE</div><h2>Talks &amp; programmes<span>.</span></h2><div class="events-grid"><div class="journey-item"><span class="journey-marker"></span><div><span class="mono">SUMMER SCHOOL · JULY 2024</span><h3>PINNs at KTH</h3><p>Physics-Informed Neural Networks summer school · KTH Royal Institute of Technology.</p></div></div><div class="journey-item"><span class="journey-marker"></span><div><span class="mono">CONFERENCE · SPLIT · JUNE 25–27, 2025</span><h3>ECCOMAS MSF 2025</h3><p>Shared my PhD work on PINNs and PirateNets for elastodynamic waves in complex velocity models.</p><a class="text-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7346126122931163136/">Conference reflection ↗</a></div></div><div class="journey-item"><span class="journey-marker"></span><div><span class="mono">EXCHANGE · BODØ, NORWAY</span><h3>Teaching across Europe</h3><p>SEA-EU funded BIP: Teaching and Learning in Higher Education for PhD Students: A European Perspective.</p><a class="text-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7449894398756040704/">Notes from Norway ↗</a></div></div><div class="journey-item"><span class="journey-marker"></span><div><span class="mono">TALK · THESSALONIKI · 2025</span><h3>NATO SPS workshop</h3><p>Presented PINNs and full waveform inversion for damage identification in concrete.</p><a class="text-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7412158765333950466/">Workshop reflection ↗</a></div></div></div></section>
-<section class="contact wrap" id="contact"><div class="eyebrow"><span class="status-dot"></span> OPEN TO COLLABORATIONS & FREELANCE PROJECTS</div><div class="contact-grid"><div><h2>Have an interesting<br>problem? <em>Let’s talk.</em></h2><p>Wave-based inverse problems, neural operators, or a device that needs to talk to the cloud — I’d love to hear what you’re working on.</p></div><div class="contact-options"><a href="mailto:abdul-hannan.mustajab@ifg.uni-kiel.de?subject=Research%20collaboration"><span><small>BUILD KNOWLEDGE TOGETHER</small>Research collaboration</span><span>↗</span></a><a href="mailto:hannanmustajab@icloud.com?subject=IoT%20project%20enquiry"><span><small>BRING AN IDEA TO LIFE</small>IoT & freelance work</span><span>↗</span></a></div></div></section>
-</main><footer class="wrap"><span>© <span id="year">2026</span> Abdul Hannan Mustajab</span><span class="footer-note">A small corner of the internet, for ideas that travel.</span><div><a href="https://github.com/hannanmustajab">GitHub ↗</a><a href="https://www.linkedin.com/in/mustajabhannan">LinkedIn ↗</a><a href="https://orcid.org/0009-0000-9337-7410">ORCID ↗</a></div></footer>
-<dialog id="note-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close note">×</button><div class="eyebrow">NOTEBOOK / DRAFT OUTLINE</div><h2 id="dialog-title"></h2><p class="draft-banner">Planned post — this outline is not a published result.</p><div id="dialog-body"></div><button class="button dialog-dismiss">Back to notebook</button></dialog>
-</body></html>
+
+<footer class="wrap footer">
+  <span>&copy; <span id="year">2026</span> Abdul Hannan Mustajab</span>
+  <div>
+    <a href="https://scholar.google.com/citations?user=uDsLqqAAAAAJ&amp;hl=en">Google Scholar</a>
+    <a href="https://orcid.org/0009-0000-9337-7410">ORCID</a>
+    <a href="https://github.com/hannanmustajab">GitHub</a>
+    <a href="https://www.linkedin.com/in/mustajabhannan">LinkedIn</a>
+  </div>
+</footer>
+</body>
+</html>
