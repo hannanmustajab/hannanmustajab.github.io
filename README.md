@@ -8,12 +8,18 @@ Run `python3 -m http.server 8000 --bind 127.0.0.1` in this directory, then open 
 
 ## Edit
 
-- `index.html`: biography, project cards, notebook previews, and contact links.
+- `index.html`: introduction, research areas, news, publications, talks, projects, education and contact.
 - `beyond-work.html`: personal notes about travel and time outdoors.
-- `app.js`: the research-note dialog and illustrative wave animation.
-- `styles.css`: responsive layout, typography, and colors.
+- `styles.css`: colours, type and layout for both pages. Colours are defined once at the top.
+- `app.js`: shows the four latest news items with a "Show all news" button, and sets the footer year.
 
-The current notebook entry is explicitly a draft outline, not a published post or measured result. Edit both the preview in `index.html` and its corresponding entry in `app.js` when publishing it. A Markdown publishing system with individual article URLs and RSS is a useful next step once the first real posts are ready.
+To add news, add a new `<li>` at the top of the news list in `index.html`. To add a paper, copy one `<article class="paper">` block.
+
+## Design
+
+The design follows a mood board built from twelve STEM PhD websites: photo and one-line role first, research profile links, numbered research areas, a dated news list, and publication cards with a figure, venue badge and PDF/DOI/BibTeX links. Type is IBM Plex Sans and IBM Plex Mono. Colours: ink #14202B, link blue #1F5FBF, amber #A3561A for badges only.
+
+The Bodø programme in the Talks list still shows `[DATE]` until the date is confirmed.
 
 ## Content provenance
 
@@ -41,18 +47,15 @@ Confirm the preferred freelance contact address, supply an initial post and appr
 
 ## Research-focused structure
 
-The homepage now leads with About and current research, followed by Notebook, Selected Projects, Work Experience, Education, and Talks & Programmes. The doctoral role appears under employment responsibilities and under doctoral studies; no unverified employment or degree dates were added.
+The homepage leads with the introduction and research areas, followed by News, Selected publications, Talks and programmes, Projects and notes, and Experience and education. The doctoral role appears under employment responsibilities and under doctoral studies; no unverified employment or degree dates were added.
 
-The owner clarified that their current focus is SciML for PDEs, specifically PINNs for elastic wave equations in concrete NDT and SHM. The inline SVG illustrates measurement, physics-informed modelling, and iterative FWI. It is a conceptual diagram, not a numerical simulation or reconstruction. The animated concrete inspection hero is conceptual and does not solve an elastic PDE.
+The owner clarified that their current focus is SciML for PDEs, specifically PINNs for elastic wave equations in concrete NDT and SHM.
 
 Scientific context checked against:
 - StructMonitor description: https://www.geotechnics.ifg.uni-kiel.de/en/projects
 - Elastic modelling and NDT imaging: https://doi.org/10.1016/j.cemconcomp.2006.02.010
 - Elastic FWI for property estimation: https://arxiv.org/abs/1504.08340
 
-## Concrete inspection hero
-
-The hero now uses a concrete cross-section animation with a source, receiver array, incident rings, defect-scattered rings, and a schematic receiver trace. The defect toggle removes the illustrative scattered arrival. Wavefronts and analytic pulses are drawn from geometric paths; this is not a numerical elastic-wave solver or an FWI reconstruction. The plot omits boundary reflections, P/S mode conversion, attenuation, and specimen calibration. Reduced-motion preferences pause playback, and a manual pause control is available.
 
 ## Education and publication sources
 
@@ -68,10 +71,6 @@ The publications page also includes the owner's submitted manuscript, *Adaptive 
 
 The thesis and its presentation are now represented on the publications page. Thesis highlights include a 4.50% L2 relative error in the best homogeneous setup, 17.7% in the best reported layered-velocity setup, and a presentation-reported approximately 10-hour 2+1D layered-model run on an RTX 4090. The thesis also documents that boundary treatment, source placement, model width, point allocation, and smoothing of velocity transitions materially affected convergence. The presentation describes the same progression from a damped oscillator to 1D and 2+1D wave equations, including temporal loss weighting and transfer learning. These values are thesis benchmarks, not field measurements or validated concrete damage-localization accuracy.
 
-Logo assets are unmodified official images used to identify education institutions in the local preview:
-- assets/amu.png: https://www.amu.ac.in/assets/images/final-logo-2.png
-- assets/unige.png: https://id.unige.it/sites/id.unige.it/files/2022-02/logo_orizzontale_COLORE.png?itok=RVe_3yOE
-- assets/cau.svg: https://www.uni-kiel.de/ps/cgi-bin/logos/files/cau/norm-en/cau-norm-en-lilagrey-rgb.svg
 
 The professional portrait is sourced from the owner's official Kiel University profile and resized for the web: https://www.geotechnics.ifg.uni-kiel.de/en/team/abdul-hannan-mustajab-m-sc/hannan-1
-University logo-use guidance should be checked before public launch; Kiel and Genoa publish permission requirements. No institutional endorsement is claimed.
+No institutional endorsement is claimed.
