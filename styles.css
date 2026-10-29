@@ -110,3 +110,14 @@ body .contact{background:transparent;border:0;border-top:1px solid var(--line);p
 .life-invitation p{max-width:550px;font-size:14px;margin:0}
 @media(max-width:900px){.profile-intro{grid-template-columns:210px 1fr;gap:38px}.life-hero{gap:38px}.landscape-art{min-height:430px}}
 @media(max-width:700px){.profile-intro{grid-template-columns:96px 1fr;gap:22px}.profile-photo img{aspect-ratio:1/1}.profile-photo figcaption{display:none}.profile-intro .research-intro{grid-column:1/-1}.life-hero{grid-template-columns:1fr;padding:50px 0;gap:38px}.life-copy h1{font-size:62px}.landscape-art{min-height:360px}.personal-grid article{grid-template-columns:48px 1fr;gap:15px}.personal-grid h3{font-size:27px}.life-invitation{grid-template-columns:1fr;gap:17px}.life-invitation .button{justify-self:start}}
+/* Research profile links, news list, paper links */
+.profile-links,.paper-links{display:flex;flex-wrap:wrap;gap:8px 18px;margin:18px 0 0;font-size:12px}
+.profile-links a,.paper-links a{color:var(--green);text-decoration:underline;text-underline-offset:4px}
+.paper-links{margin-top:10px}
+.news-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.news-list li{display:grid;grid-template-columns:110px 1fr;gap:24px;padding:14px 0;border-bottom:1px solid var(--line)}
+.news-list .mono{padding-top:4px;color:var(--muted)}
+.news-list p{margin:0;font-size:14px;color:var(--ink)}
+.news-list a{color:var(--green);text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+.bibtex{font:11px/1.5 monospace;background:#eef0e8;border:1px solid var(--line);padding:14px;overflow-x:auto;white-space:pre;color:var(--ink)}
+@media(max-width:700px){.news-list li{grid-template-columns:1fr;gap:4px}}
