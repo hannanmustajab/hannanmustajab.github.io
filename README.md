@@ -8,16 +8,22 @@ Run `python3 -m http.server 8000 --bind 127.0.0.1` in this directory, then open 
 
 ## Edit
 
-- `index.html`: introduction, research areas, news, publications, talks, projects, education and contact.
-- `beyond-work.html`: personal notes about travel and time outdoors.
-- `styles.css`: colours, type and layout for both pages. Colours are defined once at the top.
-- `app.js`: shows the four latest news items with a "Show all news" button, and sets the footer year.
+- `index.html`: homepage. Intro, what I work on, projects, log, papers, contact and office address.
+- `project-wave-modelling.html` with `project.js`: the wave modelling and inversion project page (wave slider, results chart, figures).
+- `photos.html` with `photos.js`: the photo gallery. To add a photo, put it in `assets/photos/` and add an entry to the `PHOTOS` list at the top of `photos.js`. Filter buttons are made from the tags.
+- `publications.html` with `publications.js`: the full publication list, read from `data/publications.json`.
+- `site.css`: shared base styles. Most styling is inline, copied from the design canvas.
+- `beyond-work.html`, `styles.css`, `app.js`: the earlier "beyond work" page and its styles.
 
-To add news, add a new `<li>` at the top of the news list in `index.html`. To add a paper, copy one `<article class="paper">` block.
+`data/publications.json` holds the full publication list. The GitHub Actions workflow `.github/workflows/update-publications.yml` runs every Monday (or by hand from the Actions tab), runs `scripts/update_publications.py`, and commits any new works it finds on Google Scholar, ORCID or OpenAlex. It only adds works, never removes them. To fix an entry, edit the JSON; to hide one, add `"hidden": true`. Google Scholar often blocks automated requests, so ORCID and OpenAlex act as backups: keeping the ORCID profile up to date makes this most reliable. Scheduled workflows only run on the repository's default branch.
 
 ## Design
 
-The design follows a mood board built from twelve STEM PhD websites: photo and one-line role first, research profile links, numbered research areas, a dated news list, and publication cards with a figure, venue badge and PDF/DOI/BibTeX links. Type is IBM Plex Sans and IBM Plex Mono. Colours: ink #14202B, link blue #1F5FBF, amber #A3561A for badges only.
+"Editorial notebook": grid-paper header, big Archivo headlines, highlighter marks, tilted note cards, and a seismogram line. Type is Archivo, Inter and JetBrains Mono. Colours: ink #111111, blue #2443E0, orange #E2491A, note colours #FFF6C7, #DDF0FF, #E4F5E0, #FFE1D8. The project card figures are drawn illustrations, not model output. The source design lives on the Claude design canvas.
+
+Office address (supplied by Naila, October 30, 2026): Kiel University, Institute of Geosciences, Marine and Land Geomechanics and Geotechnics, Hermann-Rodewald-Str. 8, Room 4002, 24118 Kiel, Germany.
+
+Frozen soil project text is based on the owner's "Neural operator for frozen soil" slides (graph neural operator, about 1.5% error on new grain layouts).
 
 BIP dates (online March 27 and May 4, 2026; in Bodø April 13 to 17, 2026): https://www.ffst.unist.hr/_news/46009/Teaching%20and%20Learning%20in%20HE%20for%20PhD%20students.pdf
 

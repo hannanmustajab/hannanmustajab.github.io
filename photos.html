@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photos | Hannan Mustajab</title>
+<meta name="description" content="Photos taken with a Fujifilm X-M5: travelling and hiking.">
+<meta property="og:title" content="Photos | Hannan Mustajab">
+<meta property="og:description" content="Photos taken with a Fujifilm X-M5: travelling and hiking.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hannanmustajab.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div style="background: #FFFFFF; color: #111111; font-family: 'Inter', sans-serif; font-size: 17px; line-height: 1.6">
+
+  <div style="background-color: #F3F8F5; background-image: linear-gradient(#DCE9E2 1px, transparent 1px), linear-gradient(90deg, #DCE9E2 1px, transparent 1px); background-size: 32px 32px; border-bottom: 2px solid #111111">
+    <nav aria-label="Main" style="max-width: 1240px; margin: 0 auto; padding: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px">
+      <a href="index.html" style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 16px; color: #111111; text-decoration: none">hannan.mustajab</a>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 15px">
+        <a href="index.html#research" style="color: #111111; text-decoration: none; padding: 9px 16px; border: 2px solid #111111; border-radius: 22px; background: #FFFFFF">Research</a>
+        <a href="index.html#projects" style="color: #111111; text-decoration: none; padding: 9px 16px; border: 2px solid #111111; border-radius: 22px; background: #FFFFFF">Projects</a>
+        <a href="index.html#papers" style="color: #111111; text-decoration: none; padding: 9px 16px; border: 2px solid #111111; border-radius: 22px; background: #FFFFFF">Papers</a>
+        <a href="photos.html" aria-current="page" style="color: #111111; text-decoration: none; padding: 9px 16px; border: 2px solid #111111; border-radius: 22px; background: #FFE066">Photos</a>
+        <a href="index.html#hello" style="color: #FFFFFF; text-decoration: none; padding: 9px 16px; border: 2px solid #111111; border-radius: 22px; background: #111111">Say hello</a>
+      </div>
+    </nav>
+    <header style="max-width: 1240px; margin: 0 auto; padding: 40px 24px 56px; display: flex; flex-direction: column; gap: 24px">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.06em">AWAY FROM THE DESK</span>
+      <h1 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: clamp(64px, 11vw, 168px); line-height: 0.88; letter-spacing: -0.045em">Photos</h1>
+      <p style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: clamp(22px, 2.6vw, 32px); line-height: 1.25; letter-spacing: -0.01em; max-width: 900px">Pictures I take with my Fujifilm X-M5. <span style="background: linear-gradient(transparent 55%, #FFE066 55%)">Away from research I travel and hike, and the camera comes along.</span></p><div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; background: #111111; color: #FFFFFF; border: 2px solid #111111">SHOT ON FUJIFILM X-M5</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; background: #FFE066; border: 2px solid #111111">TRAVELLING</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; background: #FFE066; border: 2px solid #111111">HIKING</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; background: #FFFFFF; border: 2px solid #111111">TOKYO</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; background: #FFFFFF; border: 2px solid #111111">LOFOTEN</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; background: #FFFFFF; border: 2px solid #111111">CROATIA</span></div>
+    </header>
+  </div>
+
+  <main style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 88px; display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; border-bottom: 2px solid #111111; padding-bottom: 12px">
+      <div id="filters" role="group" aria-label="Filter photos" style="display: flex; flex-wrap: wrap; gap: 8px">
+        
+      </div>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px"><span id="count"></span></span>
+    </div>
+
+    <div id="grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 40px 32px; padding-top: 8px">
+      
+    </div>
+  </main>
+
+  
+    <div id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo" style="position: fixed; inset: 0; background: rgba(17,17,17,0.92); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 24px; z-index: 10">
+      <div id="lb-img" style="display: flex; justify-content: center; width: min(1000px, 100%)"></div>
+      <div style="width: min(1000px, 100%); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; color: #FFFFFF">
+        <span style="display: flex; flex-direction: column"><strong style="font-size: 18px"><span id="lb-place"></span></strong><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px"><span id="lb-meta"></span></span></span>
+        <span style="display: flex; gap: 8px">
+          <button type="button" id="lb-prev" style="font: inherit; font-size: 15px; min-height: 44px; padding: 8px 18px; border-radius: 22px; border: 2px solid #FFFFFF; background: transparent; color: #FFFFFF; cursor: pointer">Previous</button>
+          <button type="button" id="lb-next" style="font: inherit; font-size: 15px; min-height: 44px; padding: 8px 18px; border-radius: 22px; border: 2px solid #FFFFFF; background: transparent; color: #FFFFFF; cursor: pointer">Next</button>
+          <button type="button" id="lb-close" style="font: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 8px 18px; border-radius: 22px; border: 2px solid #FFFFFF; background: #FFFFFF; color: #111111; cursor: pointer">Close</button>
+        </span>
+      </div>
+    </div>
+  
+
+  <section style="border-top: 2px solid #111111; background-color: #F3F8F5; background-image: linear-gradient(#DCE9E2 1px, transparent 1px), linear-gradient(90deg, #DCE9E2 1px, transparent 1px); background-size: 32px 32px">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+      <h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: clamp(36px, 5vw, 64px); line-height: 0.95; letter-spacing: -0.03em">Back to the <span style="background: linear-gradient(transparent 55%, #FFB4A2 55%)">research</span></h2>
+      <a href="index.html" style="background: #111111; color: #FFFFFF; text-decoration: none; padding: 14px 22px; border-radius: 26px; font-weight: 600">Homepage</a>
+    </div>
+  </section>
+</div>
+<script src="photos.js"></script>
+</body>
+</html>

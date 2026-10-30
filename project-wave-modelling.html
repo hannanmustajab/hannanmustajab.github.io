@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wave modelling and inversion | Hannan Mustajab</title>
+<meta name="description" content="Adaptive physics-informed neural networks for 2D elastic waves: results, simulations and what we learned.">
+<meta property="og:title" content="Wave modelling and inversion | Hannan Mustajab">
+<meta property="og:description" content="Adaptive physics-informed neural networks for 2D elastic waves: results, simulations and what we learned.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hannanmustajab.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div style="background: #FFFFFF; color: #111111; font-family: 'Inter', sans-serif; font-size: 17px; line-height: 1.6">
+  <div style="background-color: #F3F8F5; background-image: linear-gradient(#DCE9E2 1px, transparent 1px), linear-gradient(90deg, #DCE9E2 1px, transparent 1px); background-size: 32px 32px; border-bottom: 2px solid #111111">
+    <nav aria-label="Main" style="max-width: 1240px; margin: 0 auto; padding: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px">
+      <a href="index.html" style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 16px; color: #111111; text-decoration: none">hannan.mustajab</a>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 15px">
+        <a href="index.html#research" style="color: #111111; text-decoration: none; padding: 9px 16px; border: 2px solid #111111; border-radius: 22px; background: #FFFFFF">Research</a>
+        <a href="index.html#projects" aria-current="page" style="color: #111111; text-decoration: none; padding: 9px 16px; border: 2px solid #111111; border-radius: 22px; background: #FFE066">Projects</a>
+        <a href="index.html#papers" style="color: #111111; text-decoration: none; padding: 9px 16px; border: 2px solid #111111; border-radius: 22px; background: #FFFFFF">Papers</a>
+        <a href="photos.html" style="color: #111111; text-decoration: none; padding: 9px 16px; border: 2px solid #111111; border-radius: 22px; background: #FFFFFF">Photos</a>
+        <a href="index.html#hello" style="color: #FFFFFF; text-decoration: none; padding: 9px 16px; border: 2px solid #111111; border-radius: 22px; background: #111111">Say hello</a>
+      </div>
+    </nav>
+    <header style="max-width: 1240px; margin: 0 auto; padding: 40px 24px 0; display: flex; flex-direction: column; gap: 24px">
+      <a href="index.html#projects" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.06em; color: #111111">PROJECTS / 01, WAVE MODELLING AND INVERSION</a>
+      <h1 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: clamp(48px, 7vw, 104px); line-height: 0.92; letter-spacing: -0.04em; max-width: 1100px">Adaptive PINNs for elastic waves</h1>
+      <p style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: clamp(22px, 2.6vw, 32px); line-height: 1.25; letter-spacing: -0.01em; max-width: 960px">Can a neural network learn how <span style="background: linear-gradient(transparent 55%, #FFE066 55%)">elastic waves travel through layered ground</span>, without a mesh? We compared <span style="background: linear-gradient(transparent 55%, #FFB4A2 55%)">three kinds of PINNs</span> against finite-difference simulations.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; background: #FFE066; border: 2px solid #111111">SUBMITTED MANUSCRIPT, OCT 2026</span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; background: #FFFFFF; border: 2px solid #111111">2D ELASTIC WAVES</span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; background: #FFFFFF; border: 2px solid #111111">PIRATENET</span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; background: #FFFFFF; border: 2px solid #111111">MARMOUSI2</span>
+      </div>
+      <p style="margin: 0; font-size: 15px">A. H. Mustajab, F. Wuttke, A. Riaz Khan, Z. H. Rizvi</p>
+    </header>
+    <svg aria-hidden="true" viewBox="0 0 1440 110" preserveAspectRatio="none" style="display: block; width: 100%; height: 110px; margin-top: 16px"><path d="M0 60 H340 L360 58 L370 26 L382 98 L394 12 L406 106 L418 30 L430 84 L442 44 L454 70 L470 54 L490 62 L520 56 L560 60 H900 L912 54 L920 38 L930 82 L940 42 L950 72 L962 52 L980 62 L1010 57 L1040 60 H1440" fill="none" stroke="#E2491A" stroke-width="2.5"></path></svg>
+  </div>
+  <main>
+    <section aria-label="Key numbers" style="max-width: 1240px; margin: 0 auto; padding: 0 24px">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); border-bottom: 2px solid #111111">
+        <div style="padding: 28px 24px 28px 0; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 72px; color: #E2491A; letter-spacing: -0.03em; line-height: 1">1.67%</span><span style="font-size: 15px; color: #333333">time-averaged error for PirateNet on filtered Marmousi2</span></div>
+        <div style="padding: 28px 24px; border-left: 2px solid #111111; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 72px; color: #E2491A; letter-spacing: -0.03em; line-height: 1">0.40%</span><span style="font-size: 15px; color: #333333">error on a six-layer medium, against 4.12% and 5.50% for the other two PINNs</span></div>
+        <div style="padding: 28px 24px; border-left: 2px solid #111111; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 72px; color: #E2491A; letter-spacing: -0.03em; line-height: 1">3.0%</span><span style="font-size: 15px; color: #333333">error at the last time step, where standard PINNs reach 35 to 45%</span></div>
+      </div>
+    </section>
+    <section style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 0; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; border-bottom: 2px solid #111111; padding-bottom: 12px">
+        <h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.02em">When a wave meets a new layer</h2>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">TRY IT</span>
+      </div>
+      <p style="margin: 0; max-width: 760px; color: #333333">Drag the slider to move through time. A pulse starts in a fast layer, slows down and shortens when it enters the slower layer, and part of it reflects back. These are the effects a PINN has to learn.</p>
+      <div style="background-color: #F3F8F5; background-image: linear-gradient(#DCE9E2 1px, transparent 1px), linear-gradient(90deg, #DCE9E2 1px, transparent 1px); background-size: 32px 32px; border: 2px solid #111111; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 16px">
+        <svg role="img" id="wave-svg" aria-label="A wave pulse travelling through the fast layer" viewBox="0 0 1000 200" style="width: 100%; height: auto; display: block; background: #FFFFFF; border: 2px solid #111111">
+          <rect x="0" y="0" width="500" height="200" fill="#FFF6C7"></rect>
+          <rect x="500" y="0" width="500" height="200" fill="#FFE1D8"></rect>
+          <text x="20" y="28" fill="#111111" font-family="JetBrains Mono, monospace" font-size="14">FAST LAYER</text>
+          <text x="520" y="28" fill="#111111" font-family="JetBrains Mono, monospace" font-size="14">SLOW LAYER</text>
+          <line x1="500" y1="0" x2="500" y2="200" stroke="#111111" stroke-dasharray="4 6"></line>
+          <path id="wave-path" d="" fill="none" stroke="#E2491A" stroke-width="3"></path>
+        </svg>
+        <label style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; font-size: 15px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; width: 90px">TIME <span id="wave-t">0.30</span></span>
+          <input id="wave-slider" type="range" min="0" max="100" step="1" value="30" aria-label="Time" style="flex: 1 1 300px; accent-color: #2443E0; min-height: 44px">
+        </label>
+      </div>
+      <p style="margin: 0; font-size: 14px; color: #333333">Illustration for intuition, not output from the model. The real benchmarks are below.</p>
+    </section>
+    <section style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 0; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; border-bottom: 2px solid #111111; padding-bottom: 12px">
+        <h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.02em">How the three PINNs compare</h2>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">RESULTS</span>
+      </div>
+      <div role="group" aria-label="Choose a measure" style="display: flex; flex-wrap: wrap; gap: 8px">
+        <span id="tabs" style="display: contents"></span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 26px; background: #DDF0FF; transform: rotate(-0.3deg); box-shadow: 0 6px 18px rgba(0,0,0,0.10)">
+        <div id="bars" style="display: flex; flex-direction: column; gap: 14px"></div>
+        <span style="font-size: 14px; color: #333333"><span id="bar-note"></span></span>
+      </div>
+    </section>
+    <section style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 0; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; border-bottom: 2px solid #111111; padding-bottom: 12px">
+        <h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.02em">Wavefields from the paper</h2>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">SIMULATIONS</span>
+      </div>
+      <div role="group" aria-label="Choose a figure" style="display: flex; flex-wrap: wrap; gap: 8px">
+        <span id="figtabs" style="display: contents"></span>
+      </div>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+        <img id="fig-img" src="assets/marmousi-wavefields.png" alt="" style="width: 100%; height: auto; border: 2px solid #111111">
+        <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 13px"><span id="fig-cap"></span></figcaption>
+      </figure>
+    </section>
+    <section style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 0; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; border-bottom: 2px solid #111111; padding-bottom: 12px">
+        <h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.02em">What we learned</h2>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">INSIGHTS</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px">
+        <article style="background: #FFF6C7; padding: 26px; transform: rotate(-1deg); box-shadow: 0 6px 18px rgba(0,0,0,0.10); display: flex; flex-direction: column; gap: 10px">
+          <span style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 44px; color: #2443E0; line-height: 1">01</span>
+          <strong style="font-size: 20px; font-weight: 600; line-height: 1.3">Architecture matters more than input features</strong>
+          <span style="font-size: 15px; color: #333333">Fourier features alone barely helped on Marmousi2 (18.25% against 20.71%). Changing the network to PirateNet cut the error to 1.67%.</span>
+        </article>
+        <article style="background: #DDF0FF; padding: 26px; transform: rotate(0.8deg); box-shadow: 0 6px 18px rgba(0,0,0,0.10); display: flex; flex-direction: column; gap: 10px">
+          <span style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 44px; color: #2443E0; line-height: 1">02</span>
+          <strong style="font-size: 20px; font-weight: 600; line-height: 1.3">Standard PINNs drift over time</strong>
+          <span style="font-size: 15px; color: #333333">By the last time step, standard PINNs reached 35 to 45% error while PirateNet stayed at 3%.</span>
+        </article>
+        <article style="background: #E4F5E0; padding: 26px; transform: rotate(-0.6deg); box-shadow: 0 6px 18px rgba(0,0,0,0.10); display: flex; flex-direction: column; gap: 10px">
+          <span style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 44px; color: #2443E0; line-height: 1">03</span>
+          <strong style="font-size: 20px; font-weight: 600; line-height: 1.3">Sharp layer boundaries are hard</strong>
+          <span style="font-size: 15px; color: #333333">The material models were smoothed or low-pass filtered. Earlier thesis work also found smoothing velocity jumps helped training converge.</span>
+        </article>
+        <article style="background: #FFE1D8; padding: 26px; transform: rotate(0.6deg); box-shadow: 0 6px 18px rgba(0,0,0,0.10); display: flex; flex-direction: column; gap: 10px">
+          <span style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 44px; color: #2443E0; line-height: 1">04</span>
+          <strong style="font-size: 20px; font-weight: 600; line-height: 1.3">What this does not show yet</strong>
+          <span style="font-size: 15px; color: #333333">One run per setup, 2D constant-density media, simulated data only. There are no field measurements on concrete yet.</span>
+        </article>
+      </div>
+    </section>
+    <section style="max-width: 1240px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; border-bottom: 2px solid #111111; padding-bottom: 12px">
+        <h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.02em">Read more</h2>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">RESOURCES</span>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px">
+        <a href="https://doi.org/10.21203/rs.3.rs-8006794/v1" style="color: #111111; text-decoration: none; padding: 12px 20px; border: 2px solid #111111; border-radius: 26px; font-weight: 600">Earlier preprint</a>
+        <a href="https://link.springer.com/book/10.1007/978-3-032-32709-3?page=2" style="color: #111111; text-decoration: none; padding: 12px 20px; border: 2px solid #111111; border-radius: 26px; font-weight: 600">Related book chapter</a>
+      </div>
+    </section>
+    <section style="border-top: 2px solid #111111; background-color: #F3F8F5; background-image: linear-gradient(#DCE9E2 1px, transparent 1px), linear-gradient(90deg, #DCE9E2 1px, transparent 1px); background-size: 32px 32px">
+      <a href="index.html#projects" style="max-width: 1240px; margin: 0 auto; padding: 56px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; color: #111111; text-decoration: none">
+        <span style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">NEXT PROJECT / 02</span><strong style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: clamp(36px, 5vw, 64px); line-height: 0.95; letter-spacing: -0.03em">Inverse modelling with diffusion models</strong></span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">ALL PROJECTS</span>
+      </a>
+    </section>
+  </main>
+</div>
+<script src="project.js"></script>
+</body>
+</html>
