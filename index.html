@@ -147,5 +147,11 @@
   </main>
 </div>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Abdul Hannan Mustajab", "url": "https://hannanmustajab.github.io/", "jobTitle": "Doctoral Researcher", "affiliation": {"@type": "CollegeOrUniversity", "name": "Kiel University"}, "address": {"@type": "PostalAddress", "streetAddress": "Hermann-Rodewald-Str. 8, Room 4002", "postalCode": "24118", "addressLocality": "Kiel", "addressCountry": "DE"}, "sameAs": ["https://scholar.google.com/citations?user=uDsLqqAAAAAJ", "https://orcid.org/0009-0000-9337-7410", "https://github.com/hannanmustajab", "https://www.linkedin.com/in/mustajabhannan"]}</script>
+<script>
+(function () {
+  var map = { '#news': '#log', '#talks': '#log', '#publications': '#papers', '#contact': '#hello', '#about': '#research', '#education': '#research', '#experience': '#research' };
+  if (map[location.hash]) { history.replaceState(null, '', map[location.hash]); var el = document.querySelector(map[location.hash]); if (el) el.scrollIntoView(); }
+})();
+</script>
 </body>
 </html>

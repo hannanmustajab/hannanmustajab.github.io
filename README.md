@@ -13,7 +13,7 @@ Run `python3 -m http.server 8000 --bind 127.0.0.1` in this directory, then open 
 - `photos.html` with `photos.js`: the photo gallery. To add a photo, put it in `assets/photos/` and add an entry to the `PHOTOS` list at the top of `photos.js`. Filter buttons are made from the tags.
 - `publications.html` with `publications.js`: the full publication list, read from `data/publications.json`.
 - `site.css`: shared base styles. Most styling is inline, copied from the design canvas.
-- `beyond-work.html`, `styles.css`, `app.js`: the earlier "beyond work" page and its styles.
+- `404.html`: shown for old or missing addresses. `beyond-work.html` now forwards to the photos page.
 
 `data/publications.json` holds the full publication list. The GitHub Actions workflow `.github/workflows/update-publications.yml` runs every Monday (or by hand from the Actions tab), runs `scripts/update_publications.py`, and commits any new works it finds on Google Scholar, ORCID or OpenAlex. It only adds works, never removes them. To fix an entry, edit the JSON; to hide one, add `"hidden": true`. Google Scholar often blocks automated requests, so ORCID and OpenAlex act as backups: keeping the ORCID profile up to date makes this most reliable. Scheduled workflows only run on the repository's default branch.
 
