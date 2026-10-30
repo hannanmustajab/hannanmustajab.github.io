@@ -17,6 +17,10 @@ Run `python3 -m http.server 8000 --bind 127.0.0.1` in this directory, then open 
 
 `data/publications.json` holds the full publication list. The GitHub Actions workflow `.github/workflows/update-publications.yml` runs every Monday (or by hand from the Actions tab), runs `scripts/update_publications.py`, and commits any new works it finds on Google Scholar, ORCID or OpenAlex. It only adds works, never removes them. To fix an entry, edit the JSON; to hide one, add `"hidden": true`. Google Scholar often blocks automated requests, so ORCID and OpenAlex act as backups: keeping the ORCID profile up to date makes this most reliable. Scheduled workflows only run on the repository's default branch.
 
+## Search engines
+
+Each page has its own title, description, canonical address, sharing tags and structured data (schema.org Person on the homepage). `sitemap.xml` lists the pages and `robots.txt` points to it. When a page is added, add it to `sitemap.xml`. The share image is `assets/og-image.png` (1200 x 630).
+
 ## Design
 
 "Editorial notebook": grid-paper header, big Archivo headlines, highlighter marks, tilted note cards, and a seismogram line. Type is Archivo, Inter and JetBrains Mono. Colours: ink #111111, blue #2443E0, orange #E2491A, note colours #FFF6C7, #DDF0FF, #E4F5E0, #FFE1D8. The project card figures are drawn illustrations, not model output. The source design lives on the Claude design canvas.
