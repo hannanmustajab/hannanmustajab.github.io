@@ -1,0 +1,21 @@
+/* Shared base for the editorial notebook design. Most styling is inline, copied from the design canvas. */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #FFFFFF; color: #111111; }
+a { color: #2443E0; }
+a:hover { color: #16289A; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #2443E0; outline-offset: 3px; }
+img, svg { max-width: 100%; }
+[hidden] { display: none !important; }
+.ph { transition: transform 0.15s; }
+.ph:hover { transform: rotate(0deg) scale(1.02) !important; }
+@media (max-width: 600px) {
+  h2 { font-size: 34px !important; }
+  [aria-label="Key numbers"] span:first-child { font-size: 52px !important; }
+  [aria-label="Key numbers"] > div > div { border-left: none !important; padding-left: 0 !important; border-top: 1px solid #CCCCCC; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .ph { transition: none; }
+}
+address a { overflow-wrap: anywhere; }
