@@ -11,7 +11,7 @@ Run `python3 -m http.server 8000 --bind 127.0.0.1` in this directory, then open 
 - `index.html`: homepage. Intro, what I work on, projects, log, papers, contact and office address.
 - `project-wave-modelling.html` with `project.js`: the wave modelling and inversion project page (wave slider, results chart, figures).
 - `photos.html` with `photos.js`: the photo gallery. To add a photo, put it in `assets/photos/` and add an entry to the `PHOTOS` list at the top of `photos.js`. Filter buttons are made from the tags.
-- `about.html`: bio, research interests, talks, teaching, awards, background, methods and tools, and the "Along the way" photos. To add one of those pictures, put it in `assets/photos/` and swap a `[PHOTO]` placeholder for an `img` tag. Papers under review go in `data/publications.json` with `"status": "under review"` and show under their own heading; the weekly job moves them to the published list once they appear with a DOI, and it skips preprints.
+- `about.html`: turned off for now and redirects to the homepage. The full About page (bio, talks, awards, background) is in git history at commit 19338a1. Papers under review go in `data/publications.json` with `"status": "under review"` and show under their own heading; the weekly job moves them to the published list once they appear with a DOI, and it skips preprints.
 - `publications.html` with `publications.js`: the full publication list, read from `data/publications.json`.
 - `site.css`: shared base styles. Most styling is inline, copied from the design canvas.
 - `404.html`: shown for old or missing addresses. `beyond-work.html` now forwards to the photos page.
