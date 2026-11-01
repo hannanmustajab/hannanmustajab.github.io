@@ -99,6 +99,17 @@ def from_openalex():
     return works
 
 
+# Papers under review are not listed until they are published, so preprints are skipped.
+PREPRINT_DOI_PREFIXES = ("10.21203/", "10.48550/", "10.2139/ssrn", "10.31223/", "10.22541/")
+PREPRINT_WORDS = ("research square", "arxiv", "preprint", "ssrn", "eartharxiv", "authorea", "under review", "submitted")
+
+
+def is_preprint(w):
+    doi = (w.get("doi") or "").lower()
+    text = " ".join([w.get("venue") or "", w.get("url") or ""]).lower()
+    return doi.startswith(PREPRINT_DOI_PREFIXES) or any(word in text for word in PREPRINT_WORDS)
+
+
 def main():
     with open(DATA, encoding="utf8") as f:
         current = json.load(f)
@@ -123,7 +134,7 @@ def main():
     added = []
     for w in found:
         k = key(w["title"])
-        if not k or k in known_titles or (w["doi"] and w["doi"] in known_dois):
+        if not k or k in known_titles or (w["doi"] and w["doi"] in known_dois) or is_preprint(w):
             continue
         known_titles.add(k)
         if w["doi"]:
