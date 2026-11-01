@@ -1,5 +1,25 @@
 [
   {
+    "title": "Scattered-Field Physics-Informed Neural Networks for Ultrasonic Wave Simulation and Inclusion Identification in Bounded Media",
+    "authors": "A. H. Mustajab, F. Wuttke, Z. H. Rizvi",
+    "year": 2026,
+    "venue": "Submitted to Ultrasonics",
+    "url": "",
+    "doi": "",
+    "status": "under review",
+    "source": "manual"
+  },
+  {
+    "title": "Adaptive Physics-Informed Neural Networks for Elastic Wave Propagation in Heterogeneous Media",
+    "authors": "A. H. Mustajab, F. Wuttke, A. R. Khan, Z. H. Rizvi",
+    "year": 2026,
+    "venue": "Scientific Reports, in revision",
+    "url": "",
+    "doi": "",
+    "status": "under review",
+    "source": "manual"
+  },
+  {
     "title": "Noise-Pretrained Physics-Informed Neural Networks for Ultrasonic Wave Propagation in Nondestructive Testing",
     "authors": "A. H. Mustajab, F. Wuttke, Z. H. Rizvi",
     "year": 2026,

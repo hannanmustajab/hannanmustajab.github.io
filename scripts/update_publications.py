@@ -131,6 +131,18 @@ def main():
         except Exception as e:  # one source failing must not stop the others
             print(f"{name}: skipped ({e})", file=sys.stderr)
 
+    # A paper listed as under review moves to the published list once it appears with a DOI.
+    promoted = []
+    for p in current:
+        if p.get("status") != "under review":
+            continue
+        for w in found:
+            if w["doi"] and not is_preprint(w) and key(w["title"]) == key(p.get("title")):
+                p.pop("status")
+                p.update({"year": w["year"] or p["year"], "venue": w["venue"] or p["venue"], "doi": w["doi"], "url": w["url"]})
+                promoted.append(p)
+                break
+
     added = []
     for w in found:
         k = key(w["title"])
@@ -141,7 +153,9 @@ def main():
             known_dois.add(w["doi"])
         added.append(w)
 
-    if not added:
+    for p in promoted:
+        print(f"Published: {p['title']}")
+    if not added and not promoted:
         print("No new publications.")
         return
     for w in added:

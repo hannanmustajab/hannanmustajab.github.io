@@ -4,7 +4,18 @@
   var own = /(A\. ?H\. Mustajab|Abdul[- ]Hannan Mustajab|Hannan Mustajab|Mustajab, A\. ?H\.)/;
   fetch('data/publications.json').then(function (r) { return r.json(); }).then(function (works) {
     works.sort(function (a, b) { return (b.year || 0) - (a.year || 0); });
-    works.forEach(function (w, i) {
+    var review = works.filter(function (w) { return w.status === 'under review'; });
+    works = works.filter(function (w) { return w.status !== 'under review'; });
+    if (review.length) {
+      document.getElementById('under-review').hidden = false;
+      review.forEach(function (w, i) { document.getElementById('review-list').appendChild(item(w, i)); });
+    }
+    works.forEach(function (w, i) { list.appendChild(item(w, i)); });
+  }).catch(function () {
+    list.innerHTML = '<li>The list could not be loaded. See Google Scholar instead.</li>';
+  });
+
+  function item(w, i) {
       var li = document.createElement('li');
       li.setAttribute('style', 'padding: 18px 0; border-top: ' + (i === 0 ? '2px solid #111111' : '1px solid #CCCCCC') + '; display: flex; flex-direction: column; gap: 4px');
       var meta = document.createElement('span');
@@ -21,9 +32,6 @@
         el.textContent = part; authors.appendChild(el);
       });
       li.appendChild(meta); li.appendChild(title); li.appendChild(authors);
-      list.appendChild(li);
-    });
-  }).catch(function () {
-    list.innerHTML = '<li>The list could not be loaded. See Google Scholar instead.</li>';
-  });
+      return li;
+  }
 })();
