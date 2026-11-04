@@ -35,7 +35,7 @@ a:focus-visible,[tabindex]:focus-visible{outline:3px solid #2443E0;outline-offse
 .p1-fig-tags{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .p1-fig-label{color:#111111;font-weight:500}
 .p1-tag{padding:2px 8px;border:2px solid #111111;background:#FFE066;font-size:11px}
-.p1-wide .p1-fig-text,.p1-mid .p1-fig-text{max-width:760px}
+.p1-article p,.p1-article li,.p1-fig-text,.p1-photo figcaption,.p1-callout p,.p1-refs li{text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
 .p1-eq{margin:12px 0 28px;border:2px solid #111111;background:#FFFFFF;box-shadow:6px 6px 0 #111111}
 .p1-eq-label{display:block;padding:8px 14px;border-bottom:2px solid #111111;background:#F3F8F5;color:#111111}
 .p1-eq-body{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:4px 48px;padding:14px 20px;overflow-x:auto}
